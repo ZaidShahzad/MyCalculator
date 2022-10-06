@@ -1,2 +1,2 @@
 # MyCalculator
-A very simple calculator application written in Java.
+A calculator application written in java that includes a user interface and is compiled with maven.
