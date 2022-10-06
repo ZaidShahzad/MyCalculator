@@ -50,11 +50,12 @@ public class OperationButtonListener implements ActionListener {
             return;
         }
         for(JButton button : getOperationButtons()) {
-            if(e.getSource().equals(button)) {
-                button.setFocusable(false);
-                getAnswerBar().updateCurrentText(button.getText());
-                getAnswerBar().updateButtonDisplayText();
+            if(!e.getSource().equals(button)) {
+                continue;
             }
+            button.setFocusable(false);
+            getAnswerBar().updateCurrentText(button.getText());
+            getAnswerBar().updateButtonDisplayText();
         }
     }
 }

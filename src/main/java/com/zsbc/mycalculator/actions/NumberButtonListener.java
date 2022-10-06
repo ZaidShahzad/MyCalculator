@@ -32,11 +32,12 @@ public class NumberButtonListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         for(int i = 0; i <= 9; i++) {
-            if(e.getSource().equals(getNumberButton(i))) {
-                getNumberButton(i).setFocusable(false);
-                getAnswerBar().updateCurrentText(getNumberButton(i).getText());
-                getAnswerBar().updateButtonDisplayText();
+            if(!e.getSource().equals(getNumberButton(i))) {
+                continue;
             }
+            getNumberButton(i).setFocusable(false);
+            getAnswerBar().updateCurrentText(getNumberButton(i).getText());
+            getAnswerBar().updateButtonDisplayText();
         }
     }
 }

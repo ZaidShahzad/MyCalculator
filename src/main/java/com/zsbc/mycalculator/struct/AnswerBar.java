@@ -1,5 +1,4 @@
 package com.zsbc.mycalculator.struct;
-import com.zsbc.mycalculator.Program;
 import lombok.Getter;
 import lombok.Setter;
 
